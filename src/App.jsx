@@ -7,9 +7,11 @@ import Services from './pages/Services';
 import Shop from './pages/Shop';
 import WellnessClub from './pages/WellnessClub';
 import Subscribe from './pages/Subscribe';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-  return (
+  return (<>
+    <ScrollToTop />
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
@@ -26,6 +28,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </>
   );
 }
 
