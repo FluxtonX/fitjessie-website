@@ -1,5 +1,5 @@
 import ServiceCard from './ServiceCard';
-import channel from "/fitjessieschannel.png"
+import channel from "/fitjessieschannel.png";
 
 const ServicesPreview = () => {
   const services = [
@@ -7,19 +7,22 @@ const ServicesPreview = () => {
       title: 'Fitjessie Channel',
       description: 'Subscribe For Free At Home Fitness Workout',
       image: channel,
-      color: 'bg-purple-50'
+      color: 'bg-purple-50',
+      link: 'https://www.youtube.com/@Fitjessieshapes'
     },
     {
       title: 'Fitjessie Amazon Affiliate',
       description: 'Affordable Deals for Gears And Apparels',
       image: '/fitjessieamazon.png',
-      color: 'bg-pink-50'
+      color: 'bg-pink-50',
+      link: 'https://www.amazon.com/shop/fitjessie?ref=ac_inf_tb_vh&ccs_id=57d4799b-d2db-4b12-adfb-b75cb2fc524b'
     },
     {
       title: 'Fitjessie Design Products',
       description: 'Shop Fitjessie apparel and accessories—designed for busy, health-conscious people like you',
       image: '/firjessiedesign.png',
-      color: 'bg-blue-50'
+      color: 'bg-blue-50',
+      link: 'https://fitjessie.myspreadshop.com/'
     }
   ];
 
