@@ -1,10 +1,13 @@
-const ServiceCard = ({ title, description, image, color }) => {
+const ServiceCard = ({ title, description, image, color, link }) => {
   return (
-    <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 block"
+    >
       {/* Image Container */}
-      <div
-        className={`h-64 ${color} flex items-center justify-center overflow-hidden`}
-      >
+      <div className={`h-64 ${color} flex items-center justify-center overflow-hidden`}>
         <img
           src={image}
           alt={title}
@@ -20,9 +23,9 @@ const ServiceCard = ({ title, description, image, color }) => {
         <p className="text-neutral-600 leading-relaxed">{description}</p>
       </div>
 
-      {/* Hover Effect Border */}
+      {/* Hover Border */}
       <div className="absolute inset-0 border-4 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"></div>
-    </div>
+    </a>
   );
 };
 
